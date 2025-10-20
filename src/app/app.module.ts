@@ -19,12 +19,14 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    ProductsComponent
+    ProductsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
