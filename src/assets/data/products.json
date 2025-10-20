@@ -13,11 +13,9 @@
             "brand": "SoundWave",
             "stock": 156,
             "lowStockThreshold": 20,
-            "image": "https://via.placeholder.com/400x300/1976d2/ffffff?text=Wireless+Headphones",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/1976d2/ffffff?text=Headphones+1",
-                "https://via.placeholder.com/400x300/1976d2/ffffff?text=Headphones+2",
-                "https://via.placeholder.com/400x300/1976d2/ffffff?text=Headphones+3"
+                "https://static.photos/technology/640x360"
             ],
             "weight": 250,
             "dimensions": {
@@ -52,7 +50,7 @@
             "brand": "FitTech",
             "stock": 89,
             "lowStockThreshold": 15,
-            "image": "https://via.placeholder.com/400x300/4caf50/ffffff?text=Fitness+Watch",
+            "image": "https://static.photos/640x360",
             "images": [
                 "https://via.placeholder.com/400x300/4caf50/ffffff?text=Watch+1",
                 "https://via.placeholder.com/400x300/4caf50/ffffff?text=Watch+2"
@@ -90,12 +88,12 @@
             "brand": "EcoWear",
             "stock": 234,
             "lowStockThreshold": 50,
-            "image": "https://via.placeholder.com/400x300/ff9800/ffffff?text=Cotton+T-Shirt",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/ff9800/ffffff?text=T-Shirt+1",
-                "https://via.placeholder.com/400x300/ff9800/ffffff?text=T-Shirt+2",
-                "https://via.placeholder.com/400x300/ff9800/ffffff?text=T-Shirt+3",
-                "https://via.placeholder.com/400x300/ff9800/ffffff?text=T-Shirt+4"
+                "https://static.photos/people/640x360",
+                "https://static.photos/people/640x360",
+                "https://static.photos/people/640x360",
+                "https://static.photos/people/640x360"
             ],
             "weight": 180,
             "dimensions": {
@@ -162,10 +160,10 @@
             "brand": "LensPro",
             "stock": 34,
             "lowStockThreshold": 10,
-            "image": "https://via.placeholder.com/400x300/9c27b0/ffffff?text=Camera+Lens",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/9c27b0/ffffff?text=Lens+1",
-                "https://via.placeholder.com/400x300/9c27b0/ffffff?text=Lens+2"
+                "https://static.photos/640x360",
+                "https://static.photos/640x360"
             ],
             "weight": 420,
             "dimensions": {
@@ -201,7 +199,7 @@
             "brand": "HydroLife",
             "stock": 412,
             "lowStockThreshold": 100,
-            "image": "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Water+Bottle",
+            "image": "https://static.photos/640x360",
             "images": [
                 "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Bottle+1",
                 "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Bottle+2",
@@ -262,11 +260,11 @@
             "brand": "ComfortSeating",
             "stock": 45,
             "lowStockThreshold": 10,
-            "image": "https://via.placeholder.com/400x300/795548/ffffff?text=Office+Chair",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/795548/ffffff?text=Chair+1",
-                "https://via.placeholder.com/400x300/795548/ffffff?text=Chair+2",
-                "https://via.placeholder.com/400x300/795548/ffffff?text=Chair+3"
+                "https://static.photos/640x360",
+                "https://static.photos/640x360",
+                "https://static.photos/640x360"
             ],
             "weight": 18500,
             "dimensions": {
@@ -302,10 +300,10 @@
             "brand": "ZenFit",
             "stock": 178,
             "lowStockThreshold": 30,
-            "image": "https://via.placeholder.com/400x300/e91e63/ffffff?text=Yoga+Mat",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/e91e63/ffffff?text=Mat+1",
-                "https://via.placeholder.com/400x300/e91e63/ffffff?text=Mat+2"
+                "https://static.photos/640x360",
+                "https://static.photos/640x360"
             ],
             "weight": 1200,
             "dimensions": {
@@ -355,11 +353,11 @@
             "brand": "BrightLight",
             "stock": 203,
             "lowStockThreshold": 40,
-            "image": "https://via.placeholder.com/400x300/ffc107/ffffff?text=Desk+Lamp",
+            "image": "https://static.photos/640x360",
             "images": [
-                "https://via.placeholder.com/400x300/ffc107/ffffff?text=Lamp+1",
-                "https://via.placeholder.com/400x300/ffc107/ffffff?text=Lamp+2",
-                "https://via.placeholder.com/400x300/ffc107/ffffff?text=Lamp+3"
+                "https://static.photos/640x360",
+                "https://static.photos/640x360",
+                "https://static.photos/640x360"
             ],
             "weight": 680,
             "dimensions": {
