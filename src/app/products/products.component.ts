@@ -45,9 +45,9 @@ export class ProductsComponent implements OnInit {
   }
 
   getStockStatus(product: Product): string {
-    if (product.stock === 0) return $localize`:@@productsStockOut:Out of Stock`;
-    if (product.stock <= product.lowStockThreshold) return $localize`:@@productsStockLow:Low Stock`;
-    return $localize`:@@productsStockIn:In Stock`;
+    if (product.stock === 0) return 'Out of Stock';
+    if (product.stock <= product.lowStockThreshold) return 'Low Stock';
+    return 'In Stock';
   }
 
   getStockClass(product: Product): string {
