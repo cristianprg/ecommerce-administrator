@@ -20,13 +20,19 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { OrdersComponent } from './orders/orders.component';
+import { CustomersComponent } from './customers/customers.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ProductsComponent,
-    DashboardComponent
+    DashboardComponent,
+    OrdersComponent,
+    CustomersComponent,
+    AnalyticsComponent
   ],
   imports: [
     BrowserModule,

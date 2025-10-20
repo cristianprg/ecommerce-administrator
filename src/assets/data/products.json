@@ -13,7 +13,7 @@
             "brand": "SoundWave",
             "stock": 156,
             "lowStockThreshold": 20,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
                 "https://static.photos/technology/640x360"
             ],
@@ -50,10 +50,10 @@
             "brand": "FitTech",
             "stock": 89,
             "lowStockThreshold": 15,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://via.placeholder.com/400x300/4caf50/ffffff?text=Watch+1",
-                "https://via.placeholder.com/400x300/4caf50/ffffff?text=Watch+2"
+                "https://picsum.photos/400/300",
+                "https://picsum.photos/400/300"
             ],
             "weight": 45,
             "dimensions": {
@@ -88,12 +88,12 @@
             "brand": "EcoWear",
             "stock": 234,
             "lowStockThreshold": 50,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
                 "https://static.photos/people/640x360",
-                "https://static.photos/people/640x360",
-                "https://static.photos/people/640x360",
-                "https://static.photos/people/640x360"
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300"
             ],
             "weight": 180,
             "dimensions": {
@@ -160,10 +160,10 @@
             "brand": "LensPro",
             "stock": 34,
             "lowStockThreshold": 10,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://static.photos/640x360",
-                "https://static.photos/640x360"
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300"
             ],
             "weight": 420,
             "dimensions": {
@@ -199,11 +199,11 @@
             "brand": "HydroLife",
             "stock": 412,
             "lowStockThreshold": 100,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Bottle+1",
-                "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Bottle+2",
-                "https://via.placeholder.com/400x300/00bcd4/ffffff?text=Bottle+3"
+                "https://picsum.photos/400/300",
+                "https://picsum.photos/400/300",
+                "https://picsum.photos/400/300"
             ],
             "weight": 350,
             "dimensions": {
@@ -260,11 +260,11 @@
             "brand": "ComfortSeating",
             "stock": 45,
             "lowStockThreshold": 10,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://static.photos/640x360",
-                "https://static.photos/640x360",
-                "https://static.photos/640x360"
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300"
             ],
             "weight": 18500,
             "dimensions": {
@@ -300,10 +300,10 @@
             "brand": "ZenFit",
             "stock": 178,
             "lowStockThreshold": 30,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://static.photos/640x360",
-                "https://static.photos/640x360"
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300"
             ],
             "weight": 1200,
             "dimensions": {
@@ -353,11 +353,11 @@
             "brand": "BrightLight",
             "stock": 203,
             "lowStockThreshold": 40,
-            "image": "https://static.photos/640x360",
+            "image": "https://picsum.photos/200/300",
             "images": [
-                "https://static.photos/640x360",
-                "https://static.photos/640x360",
-                "https://static.photos/640x360"
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300",
+                "https://picsum.photos/200/300"
             ],
             "weight": 680,
             "dimensions": {

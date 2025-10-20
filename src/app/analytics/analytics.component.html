@@ -1,0 +1,138 @@
+<div class="analytics-container">
+  <div class="analytics-header">
+    <h1>Analytics & Reports</h1>
+  </div>
+
+  <!-- Key Metrics -->
+  <div class="metrics-grid">
+    <mat-card class="metric-card">
+      <div class="metric-icon sales">
+        <mat-icon>trending_up</mat-icon>
+      </div>
+      <div class="metric-content">
+        <h3>${{ totalSales | number:'1.2-2' }}</h3>
+        <p>Total Sales</p>
+        <span class="metric-change positive">
+          <mat-icon>arrow_upward</mat-icon>
+          +{{ salesGrowth }}%
+        </span>
+      </div>
+    </mat-card>
+
+    <mat-card class="metric-card">
+      <div class="metric-icon revenue">
+        <mat-icon>attach_money</mat-icon>
+      </div>
+      <div class="metric-content">
+        <h3>${{ monthlyRevenue | number:'1.2-2' }}</h3>
+        <p>Monthly Revenue</p>
+        <span class="metric-change positive">
+          <mat-icon>arrow_upward</mat-icon>
+          +{{ revenueGrowth }}%
+        </span>
+      </div>
+    </mat-card>
+
+    <mat-card class="metric-card">
+      <div class="metric-icon customers">
+        <mat-icon>people</mat-icon>
+      </div>
+      <div class="metric-content">
+        <h3>{{ newCustomers }}</h3>
+        <p>New Customers</p>
+        <span class="metric-detail">{{ returningCustomers }} returning</span>
+      </div>
+    </mat-card>
+
+    <mat-card class="metric-card">
+      <div class="metric-icon retention">
+        <mat-icon>loyalty</mat-icon>
+      </div>
+      <div class="metric-content">
+        <h3>{{ customerRetentionRate }}%</h3>
+        <p>Retention Rate</p>
+        <span class="metric-change positive">
+          <mat-icon>arrow_upward</mat-icon>
+          +5.2%
+        </span>
+      </div>
+    </mat-card>
+  </div>
+
+  <!-- Top Selling Products -->
+  <mat-card class="data-card">
+    <mat-card-header>
+      <mat-card-title>Top Selling Products</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Sales</th>
+              <th>Revenue</th>
+              <th>Trend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of topSellingProducts">
+              <td class="product-name">{{ product.name }}</td>
+              <td>{{ product.sales }}</td>
+              <td class="revenue">${{ product.revenue | number:'1.2-2' }}</td>
+              <td>
+                <mat-icon [class]="'trend-icon ' + product.trend">
+                  {{ product.trend === 'up' ? 'trending_up' : 'trending_down' }}
+                </mat-icon>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Category Performance & Traffic Sources -->
+  <div class="charts-grid">
+    <mat-card class="chart-card">
+      <mat-card-header>
+        <mat-card-title>Category Performance</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="category-list">
+          <div *ngFor="let category of categoryPerformance" class="category-item">
+            <div class="category-info">
+              <span class="category-name">{{ category.name }}</span>
+              <span class="category-revenue">${{ category.revenue | number:'1.2-2' }}</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" 
+                   [style.width.%]="category.percentage"
+                   [style.background-color]="category.color">
+              </div>
+            </div>
+            <span class="category-percentage">{{ category.percentage }}%</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="chart-card">
+      <mat-card-header>
+        <mat-card-title>Traffic Sources</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="traffic-list">
+          <div *ngFor="let source of trafficSources" class="traffic-item">
+            <div class="traffic-indicator" [style.background-color]="source.color"></div>
+            <div class="traffic-info">
+              <span class="traffic-source">{{ source.source }}</span>
+              <span class="traffic-visitors">{{ source.visitors | number }} visitors</span>
+            </div>
+            <span class="traffic-percentage">{{ source.percentage }}%</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

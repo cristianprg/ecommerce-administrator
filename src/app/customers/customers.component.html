@@ -1,0 +1,114 @@
+<div class="customers-container">
+  <div class="customers-header">
+    <h1>Customers</h1>
+    <button mat-raised-button color="primary">
+      <mat-icon>person_add</mat-icon>
+      Add Customer
+    </button>
+  </div>
+
+  <div class="filters">
+    <mat-form-field appearance="outline">
+      <mat-label>Search customers</mat-label>
+      <input matInput 
+             placeholder="Search by name, email, or phone"
+             [(ngModel)]="searchTerm"
+             (input)="onSearchChange($any($event.target).value)">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div *ngIf="!loading && filteredCustomers.length === 0" class="no-results">
+    <mat-icon>people_outline</mat-icon>
+    <p>No customers found matching "{{ searchTerm }}"</p>
+  </div>
+
+  <div *ngIf="!loading && filteredCustomers.length > 0" class="customers-grid">
+    <mat-card *ngFor="let customer of filteredCustomers" class="customer-card">
+      <mat-card-header>
+        <img mat-card-avatar [src]="customer.avatar" [alt]="getFullName(customer)">
+        <mat-card-title>{{ getFullName(customer) }}</mat-card-title>
+        <mat-card-subtitle>{{ customer.email }}</mat-card-subtitle>
+        <mat-chip [ngClass]="getStatusClass(customer.status)" class="status-chip">
+          {{ getStatusLabel(customer.status) }}
+        </mat-chip>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <div class="customer-info">
+          <div class="info-section">
+            <h3>Contact Information</h3>
+            <div class="info-row">
+              <mat-icon>phone</mat-icon>
+              <span>{{ customer.phone }}</span>
+            </div>
+            <div class="info-row">
+              <mat-icon>location_on</mat-icon>
+              <div class="address">
+                <span>{{ customer.address.city }}, {{ customer.address.state }}</span>
+                <span>{{ customer.address.country }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <h3>Purchase History</h3>
+            <div class="stats-row">
+              <div class="stat-item">
+                <mat-icon>shopping_bag</mat-icon>
+                <div>
+                  <span class="stat-value">{{ customer.totalOrders }}</span>
+                  <span class="stat-label">Total Orders</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <mat-icon>attach_money</mat-icon>
+                <div>
+                  <span class="stat-value">${{ customer.totalSpent | number:'1.2-2' }}</span>
+                  <span class="stat-label">Total Spent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <h3>Account Details</h3>
+            <div class="info-row">
+              <mat-icon>calendar_today</mat-icon>
+              <div>
+                <span class="label">Registered:</span>
+                <span>{{ customer.registrationDate | date:'mediumDate' }}</span>
+              </div>
+            </div>
+            <div class="info-row" *ngIf="customer.lastOrderDate">
+              <mat-icon>schedule</mat-icon>
+              <div>
+                <span class="label">Last Order:</span>
+                <span>{{ customer.lastOrderDate | date:'mediumDate' }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="onViewCustomer(customer)">
+          <mat-icon>visibility</mat-icon>
+          View
+        </button>
+        <button mat-button color="accent" (click)="onEditCustomer(customer)">
+          <mat-icon>edit</mat-icon>
+          Edit
+        </button>
+        <button mat-button color="warn" (click)="onDeleteCustomer(customer)">
+          <mat-icon>delete</mat-icon>
+          Delete
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
