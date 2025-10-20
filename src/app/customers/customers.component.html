@@ -1,16 +1,17 @@
 <div class="customers-container">
   <div class="customers-header">
-    <h1>Customers</h1>
+    <h1 i18n="@@customersTitle">Customers</h1>
     <button mat-raised-button color="primary">
       <mat-icon>person_add</mat-icon>
-      Add Customer
+      <span i18n="@@customersAddButton">Add Customer</span>
     </button>
   </div>
 
   <div class="filters">
     <mat-form-field appearance="outline">
-      <mat-label>Search customers</mat-label>
+      <mat-label i18n="@@customersSearchLabel">Search customers</mat-label>
       <input matInput 
+             i18n-placeholder="@@customersSearchPlaceholder"
              placeholder="Search by name, email, or phone"
              [(ngModel)]="searchTerm"
              (input)="onSearchChange($any($event.target).value)">
@@ -24,7 +25,7 @@
 
   <div *ngIf="!loading && filteredCustomers.length === 0" class="no-results">
     <mat-icon>people_outline</mat-icon>
-    <p>No customers found matching "{{ searchTerm }}"</p>
+    <p i18n="@@customersNoResults">No customers found matching "{{ searchTerm }}"</p>
   </div>
 
   <div *ngIf="!loading && filteredCustomers.length > 0" class="customers-grid">
@@ -41,7 +42,7 @@
       <mat-card-content>
         <div class="customer-info">
           <div class="info-section">
-            <h3>Contact Information</h3>
+            <h3 i18n="@@customersContactInfo">Contact Information</h3>
             <div class="info-row">
               <mat-icon>phone</mat-icon>
               <span>{{ customer.phone }}</span>
@@ -56,38 +57,38 @@
           </div>
 
           <div class="info-section">
-            <h3>Purchase History</h3>
+            <h3 i18n="@@customersPurchaseHistory">Purchase History</h3>
             <div class="stats-row">
               <div class="stat-item">
                 <mat-icon>shopping_bag</mat-icon>
                 <div>
                   <span class="stat-value">{{ customer.totalOrders }}</span>
-                  <span class="stat-label">Total Orders</span>
+                  <span class="stat-label" i18n="@@customersTotalOrders">Total Orders</span>
                 </div>
               </div>
               <div class="stat-item">
                 <mat-icon>attach_money</mat-icon>
                 <div>
                   <span class="stat-value">${{ customer.totalSpent | number:'1.2-2' }}</span>
-                  <span class="stat-label">Total Spent</span>
+                  <span class="stat-label" i18n="@@customersTotalSpent">Total Spent</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="info-section">
-            <h3>Account Details</h3>
+            <h3 i18n="@@customersAccountDetails">Account Details</h3>
             <div class="info-row">
               <mat-icon>calendar_today</mat-icon>
               <div>
-                <span class="label">Registered:</span>
+                <span class="label" i18n="@@customersRegistered">Registered:</span>
                 <span>{{ customer.registrationDate | date:'mediumDate' }}</span>
               </div>
             </div>
             <div class="info-row" *ngIf="customer.lastOrderDate">
               <mat-icon>schedule</mat-icon>
               <div>
-                <span class="label">Last Order:</span>
+                <span class="label" i18n="@@customersLastOrder">Last Order:</span>
                 <span>{{ customer.lastOrderDate | date:'mediumDate' }}</span>
               </div>
             </div>
@@ -98,15 +99,15 @@
       <mat-card-actions>
         <button mat-button color="primary" (click)="onViewCustomer(customer)">
           <mat-icon>visibility</mat-icon>
-          View
+          <span i18n="@@customersViewButton">View</span>
         </button>
         <button mat-button color="accent" (click)="onEditCustomer(customer)">
           <mat-icon>edit</mat-icon>
-          Edit
+          <span i18n="@@customersEditButton">Edit</span>
         </button>
         <button mat-button color="warn" (click)="onDeleteCustomer(customer)">
           <mat-icon>delete</mat-icon>
-          Delete
+          <span i18n="@@customersDeleteButton">Delete</span>
         </button>
       </mat-card-actions>
     </mat-card>

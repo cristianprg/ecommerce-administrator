@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="analyticsTitle" datatype="html">
+        <source>Analytics &amp; Reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsLast30Days" datatype="html">
+        <source>Last 30 Days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsExportButton" datatype="html">
+        <source>Export Report</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTotalSales" datatype="html">
+        <source>Total Sales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsMonthlyRevenue" datatype="html">
+        <source>Monthly Revenue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsNewCustomers" datatype="html">
+        <source>New Customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsReturningCustomers" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ returningCustomers }}"/> returning</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsRetentionRate" datatype="html">
+        <source>Retention Rate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTopSellingProducts" datatype="html">
+        <source>Top Selling Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTableProduct" datatype="html">
+        <source>Product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTableSales" datatype="html">
+        <source>Sales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTableRevenue" datatype="html">
+        <source>Revenue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTableTrend" datatype="html">
+        <source>Trend</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsCategoryPerformance" datatype="html">
+        <source>Category Performance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsTrafficSources" datatype="html">
+        <source>Traffic Sources</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="analyticsVisitors" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ source.visitors | number }}"/> visitors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/analytics/analytics.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersTitle" datatype="html">
+        <source>Customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersAddButton" datatype="html">
+        <source>Add Customer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersSearchLabel" datatype="html">
+        <source>Search customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersSearchPlaceholder" datatype="html">
+        <source>Search by name, email, or phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersNoResults" datatype="html">
+        <source>No customers found matching &quot;<x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersContactInfo" datatype="html">
+        <source>Contact Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersPurchaseHistory" datatype="html">
+        <source>Purchase History</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersTotalOrders" datatype="html">
+        <source>Total Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersTotalSpent" datatype="html">
+        <source>Total Spent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersAccountDetails" datatype="html">
+        <source>Account Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersRegistered" datatype="html">
+        <source>Registered:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersLastOrder" datatype="html">
+        <source>Last Order:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersViewButton" datatype="html">
+        <source>View</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersEditButton" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customersDeleteButton" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/customers/customers.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboardWelcomeTitle" datatype="html">
+        <source>Welcome to E-Commerce Administrator</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboardWelcomeSubtitle" datatype="html">
+        <source>Manage your online store with ease and efficiency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboardWelcomeDescription" datatype="html">
+        <source> This powerful admin panel gives you complete control over your e-commerce operations. Monitor sales, manage products, track orders, and analyze customer behavior all in one place. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsTotalProducts" datatype="html">
+        <source>Total Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsProductsChange" datatype="html">
+        <source>+12% from last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsTotalOrders" datatype="html">
+        <source>Total Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsOrdersChange" datatype="html">
+        <source>+8% from last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsTotalCustomers" datatype="html">
+        <source>Total Customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsCustomersChange" datatype="html">
+        <source>+15% from last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsTotalRevenue" datatype="html">
+        <source>Total Revenue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statsRevenueChange" datatype="html">
+        <source>+23% from last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="quickActionsTitle" datatype="html">
+        <source>Quick Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionAddProductTitle" datatype="html">
+        <source>Add New Product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionAddProductDesc" datatype="html">
+        <source>Create and publish a new product to your store</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionViewOrdersTitle" datatype="html">
+        <source>View Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionViewOrdersDesc" datatype="html">
+        <source>Check and manage recent customer orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionManageCustomersTitle" datatype="html">
+        <source>Manage Customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionManageCustomersDesc" datatype="html">
+        <source>View and edit customer information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionViewAnalyticsTitle" datatype="html">
+        <source>View Analytics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actionViewAnalyticsDesc" datatype="html">
+        <source>Analyze sales trends and performance metrics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="recentActivityTitle" datatype="html">
+        <source>Recent Activity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityNewOrder" datatype="html">
+        <source>New order #1234 received</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityTime1" datatype="html">
+        <source>2 minutes ago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityProductUpdated" datatype="html">
+        <source>Product &quot;Wireless Headphones&quot; updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityTime2" datatype="html">
+        <source>1 hour ago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityNewCustomer" datatype="html">
+        <source>New customer registered</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityTime3" datatype="html">
+        <source>3 hours ago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityLowStock" datatype="html">
+        <source>Low stock alert: Camera Lens 50mm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activityTime4" datatype="html">
+        <source>5 hours ago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersTitle" datatype="html">
+        <source>Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersExportButton" datatype="html">
+        <source>Export Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersSearchLabel" datatype="html">
+        <source>Search orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersSearchPlaceholder" datatype="html">
+        <source>Search by order number, customer name, or email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersNoResults" datatype="html">
+        <source>No orders found matching &quot;<x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersCustomerInfo" datatype="html">
+        <source>Customer Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersShippingAddress" datatype="html">
+        <source>Shipping Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersOrderItems" datatype="html">
+        <source>Order Items</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersItemQuantity" datatype="html">
+        <source>Qty: <x id="INTERPOLATION" equiv-text="{{ item.quantity }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersPaymentMethod" datatype="html">
+        <source>Payment Method:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersTrackingNumber" datatype="html">
+        <source>Tracking Number:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersTotal" datatype="html">
+        <source>Total:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersViewButton" datatype="html">
+        <source>View Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersUpdateButton" datatype="html">
+        <source>Update Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ordersCancelButton" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/orders/orders.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsTitle" datatype="html">
+        <source>Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsAddButton" datatype="html">
+        <source>Add Product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsSearchLabel" datatype="html">
+        <source>Search products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsSearchPlaceholder" datatype="html">
+        <source>Search by name, SKU, or brand</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsNoResults" datatype="html">
+        <source>No products found matching &quot;<x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsFeaturedBadge" datatype="html">
+        <source>Featured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsCategoryLabel" datatype="html">
+        <source>Category:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsPriceLabel" datatype="html">
+        <source>Price:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsStockLabel" datatype="html">
+        <source>Stock:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsStockUnits" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ product.stock }}"/> units</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsRatingLabel" datatype="html">
+        <source>Rating:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsRatingReviews" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ product.rating }}"/> (<x id="INTERPOLATION_1" equiv-text="{{ product.reviewCount }}"/> reviews)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsEditButton" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsViewButton" datatype="html">
+        <source>View</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsDeleteButton" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsStockOut" datatype="html">
+        <source>Out of Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsStockLow" datatype="html">
+        <source>Low Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="productsStockIn" datatype="html">
+        <source>In Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/products.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarTitle" datatype="html">
+        <source>E-Commerce Admin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarDashboard" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarProducts" datatype="html">
+        <source>Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarOrders" datatype="html">
+        <source>Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarCustomers" datatype="html">
+        <source>Customers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarAnalytics" datatype="html">
+        <source>Analytics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="toolbarMenuButton" datatype="html">
+        <source>Menu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="toolbarTitle" datatype="html">
+        <source>Admin Panel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

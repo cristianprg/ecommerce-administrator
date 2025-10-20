@@ -1,12 +1,19 @@
 <div class="orders-container">
   <div class="orders-header">
-    <h1>Orders</h1>
+    <h1 i18n="@@ordersTitle">Orders</h1>
+    <div class="header-actions">
+      <button mat-raised-button color="primary">
+        <mat-icon>file_download</mat-icon>
+        <span i18n="@@ordersExportButton">Export Orders</span>
+      </button>
+    </div>
   </div>
 
   <div class="filters">
     <mat-form-field appearance="outline">
-      <mat-label>Search orders</mat-label>
+      <mat-label i18n="@@ordersSearchLabel">Search orders</mat-label>
       <input matInput 
+             i18n-placeholder="@@ordersSearchPlaceholder"
              placeholder="Search by order number, customer name, or email"
              [(ngModel)]="searchTerm"
              (input)="onSearchChange($any($event.target).value)">
@@ -20,7 +27,7 @@
 
   <div *ngIf="!loading && filteredOrders.length === 0" class="no-results">
     <mat-icon>receipt_long</mat-icon>
-    <p>No orders found matching "{{ searchTerm }}"</p>
+    <p i18n="@@ordersNoResults">No orders found matching "{{ searchTerm }}"</p>
   </div>
 
   <div *ngIf="!loading && filteredOrders.length > 0" class="orders-grid">
@@ -40,7 +47,7 @@
       <mat-card-content>
         <div class="order-info-section">
           <div class="customer-info">
-            <h3>Customer Information</h3>
+            <h3 i18n="@@ordersCustomerInfo">Customer Information</h3>
             <div class="info-row">
               <mat-icon>person</mat-icon>
               <span>{{ order.customerName }}</span>
@@ -56,7 +63,7 @@
           </div>
 
           <div class="shipping-info">
-            <h3>Shipping Address</h3>
+            <h3 i18n="@@ordersShippingAddress">Shipping Address</h3>
             <div class="address">
               <mat-icon>location_on</mat-icon>
               <div>
@@ -69,13 +76,13 @@
         </div>
 
         <div class="order-items">
-          <h3>Order Items</h3>
+          <h3 i18n="@@ordersOrderItems">Order Items</h3>
           <div class="items-list">
             <div *ngFor="let item of order.items" class="item-row">
               <img [src]="item.image" [alt]="item.productName">
               <div class="item-details">
                 <span class="item-name">{{ item.productName }}</span>
-                <span class="item-quantity">Qty: {{ item.quantity }}</span>
+                <span class="item-quantity" i18n="@@ordersItemQuantity">Qty: {{ item.quantity }}</span>
               </div>
               <span class="item-price">${{ item.price * item.quantity | number:'1.2-2' }}</span>
             </div>
@@ -84,15 +91,15 @@
 
         <div class="order-summary">
           <div class="summary-row">
-            <span class="label">Payment Method:</span>
+            <span class="label" i18n="@@ordersPaymentMethod">Payment Method:</span>
             <span>{{ order.paymentMethod }}</span>
           </div>
           <div class="summary-row" *ngIf="order.trackingNumber">
-            <span class="label">Tracking Number:</span>
+            <span class="label" i18n="@@ordersTrackingNumber">Tracking Number:</span>
             <span class="tracking">{{ order.trackingNumber }}</span>
           </div>
           <div class="summary-row total">
-            <span class="label">Total:</span>
+            <span class="label" i18n="@@ordersTotal">Total:</span>
             <span class="amount">${{ order.total | number:'1.2-2' }}</span>
           </div>
         </div>
@@ -101,15 +108,15 @@
       <mat-card-actions>
         <button mat-button color="primary" (click)="onViewOrder(order)">
           <mat-icon>visibility</mat-icon>
-          View Details
+          <span i18n="@@ordersViewButton">View Details</span>
         </button>
         <button mat-button color="accent" (click)="onUpdateStatus(order)">
           <mat-icon>update</mat-icon>
-          Update Status
+          <span i18n="@@ordersUpdateButton">Update Status</span>
         </button>
         <button mat-button color="warn" (click)="onCancelOrder(order)" [disabled]="order.status === 'delivered' || order.status === 'cancelled'">
           <mat-icon>cancel</mat-icon>
-          Cancel
+          <span i18n="@@ordersCancelButton">Cancel</span>
         </button>
       </mat-card-actions>
     </mat-card>

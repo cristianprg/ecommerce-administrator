@@ -4,7 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:es": "ng serve --configuration=es",
     "build": "ng build",
+    "build:es": "ng build --configuration=es",
+    "build:prod": "ng build --configuration=production",
+    "build:prod-es": "ng build --configuration=production-es",
+    "build:all": "ng build --configuration=production && ng build --configuration=production-es",
+    "extract-i18n": "ng extract-i18n --output-path src/locale",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

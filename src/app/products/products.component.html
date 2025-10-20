@@ -1,16 +1,17 @@
 <div class="products-container">
   <div class="products-header">
-    <h1>Products</h1>
+    <h1 i18n="@@productsTitle">Products</h1>
     <button mat-raised-button color="primary" (click)="onAddProduct()">
       <mat-icon>add</mat-icon>
-      Add Product
+      <span i18n="@@productsAddButton">Add Product</span>
     </button>
   </div>
 
   <div class="filters">
     <mat-form-field appearance="outline">
-      <mat-label></mat-label>
+      <mat-label i18n="@@productsSearchLabel">Search products</mat-label>
       <input matInput 
+             i18n-placeholder="@@productsSearchPlaceholder"
              placeholder="Search by name, SKU, or brand"
              [(ngModel)]="searchTerm"
              (input)="onSearchChange($any($event.target).value)">
@@ -24,7 +25,7 @@
 
   <div *ngIf="!loading && filteredProducts.length === 0" class="no-results">
     <mat-icon>search_off</mat-icon>
-    <p>No products found matching "{{ searchTerm }}"</p>
+    <p i18n="@@productsNoResults">No products found matching "{{ searchTerm }}"</p>
   </div>
 
   <div *ngIf="!loading && filteredProducts.length > 0" class="products-grid">
@@ -32,7 +33,7 @@
       <div class="product-image-container">
         <img mat-card-image [src]="product.image" [alt]="product.name" 
              onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
-        <mat-chip *ngIf="product.isFeatured" class="featured-badge">Featured</mat-chip>
+        <mat-chip *ngIf="product.isFeatured" class="featured-badge" i18n="@@productsFeaturedBadge">Featured</mat-chip>
         <mat-chip [ngClass]="getStockClass(product)" class="stock-badge">
           {{ getStockStatus(product) }}
         </mat-chip>
@@ -48,12 +49,12 @@
         
         <div class="product-info">
           <div class="info-row">
-            <span class="label">Category:</span>
+            <span class="label" i18n="@@productsCategoryLabel">Category:</span>
             <span>{{ product.category }} > {{ product.subcategory }}</span>
           </div>
           
           <div class="info-row">
-            <span class="label">Price:</span>
+            <span class="label" i18n="@@productsPriceLabel">Price:</span>
             <span class="price">${{ product.price }}</span>
             <span *ngIf="product.compareAtPrice" class="compare-price">
               ${{ product.compareAtPrice }}
@@ -61,15 +62,15 @@
           </div>
           
           <div class="info-row">
-            <span class="label">Stock:</span>
-            <span>{{ product.stock }} units</span>
+            <span class="label" i18n="@@productsStockLabel">Stock:</span>
+            <span i18n="@@productsStockUnits">{{ product.stock }} units</span>
           </div>
           
           <div class="info-row">
-            <span class="label">Rating:</span>
+            <span class="label" i18n="@@productsRatingLabel">Rating:</span>
             <span>
               <mat-icon class="rating-icon">star</mat-icon>
-              {{ product.rating }} ({{ product.reviewCount }} reviews)
+              <ng-container i18n="@@productsRatingReviews">{{ product.rating }} ({{ product.reviewCount }} reviews)</ng-container>
             </span>
           </div>
         </div>
@@ -86,15 +87,15 @@
       <mat-card-actions>
         <button mat-button color="primary" (click)="onEdit(product)">
           <mat-icon>edit</mat-icon>
-          Edit
+          <span i18n="@@productsEditButton">Edit</span>
         </button>
         <button mat-button color="accent" (click)="onView(product)">
           <mat-icon>visibility</mat-icon>
-          View
+          <span i18n="@@productsViewButton">View</span>
         </button>
         <button mat-button color="warn" (click)="onDelete(product)">
           <mat-icon>delete</mat-icon>
-          Delete
+          <span i18n="@@productsDeleteButton">Delete</span>
         </button>
       </mat-card-actions>
     </mat-card>

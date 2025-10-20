@@ -1,6 +1,16 @@
 <div class="analytics-container">
   <div class="analytics-header">
-    <h1>Analytics & Reports</h1>
+    <h1 i18n="@@analyticsTitle">Analytics & Reports</h1>
+    <div class="header-actions">
+      <button mat-raised-button>
+        <mat-icon>date_range</mat-icon>
+        <span i18n="@@analyticsLast30Days">Last 30 Days</span>
+      </button>
+      <button mat-raised-button color="primary">
+        <mat-icon>file_download</mat-icon>
+        <span i18n="@@analyticsExportButton">Export Report</span>
+      </button>
+    </div>
   </div>
 
   <!-- Key Metrics -->
@@ -11,7 +21,7 @@
       </div>
       <div class="metric-content">
         <h3>${{ totalSales | number:'1.2-2' }}</h3>
-        <p>Total Sales</p>
+        <p i18n="@@analyticsTotalSales">Total Sales</p>
         <span class="metric-change positive">
           <mat-icon>arrow_upward</mat-icon>
           +{{ salesGrowth }}%
@@ -25,7 +35,7 @@
       </div>
       <div class="metric-content">
         <h3>${{ monthlyRevenue | number:'1.2-2' }}</h3>
-        <p>Monthly Revenue</p>
+        <p i18n="@@analyticsMonthlyRevenue">Monthly Revenue</p>
         <span class="metric-change positive">
           <mat-icon>arrow_upward</mat-icon>
           +{{ revenueGrowth }}%
@@ -39,8 +49,8 @@
       </div>
       <div class="metric-content">
         <h3>{{ newCustomers }}</h3>
-        <p>New Customers</p>
-        <span class="metric-detail">{{ returningCustomers }} returning</span>
+        <p i18n="@@analyticsNewCustomers">New Customers</p>
+        <span class="metric-detail" i18n="@@analyticsReturningCustomers">{{ returningCustomers }} returning</span>
       </div>
     </mat-card>
 
@@ -50,7 +60,7 @@
       </div>
       <div class="metric-content">
         <h3>{{ customerRetentionRate }}%</h3>
-        <p>Retention Rate</p>
+        <p i18n="@@analyticsRetentionRate">Retention Rate</p>
         <span class="metric-change positive">
           <mat-icon>arrow_upward</mat-icon>
           +5.2%
@@ -62,17 +72,17 @@
   <!-- Top Selling Products -->
   <mat-card class="data-card">
     <mat-card-header>
-      <mat-card-title>Top Selling Products</mat-card-title>
+      <mat-card-title i18n="@@analyticsTopSellingProducts">Top Selling Products</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <div class="table-container">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Product</th>
-              <th>Sales</th>
-              <th>Revenue</th>
-              <th>Trend</th>
+              <th i18n="@@analyticsTableProduct">Product</th>
+              <th i18n="@@analyticsTableSales">Sales</th>
+              <th i18n="@@analyticsTableRevenue">Revenue</th>
+              <th i18n="@@analyticsTableTrend">Trend</th>
             </tr>
           </thead>
           <tbody>
@@ -96,7 +106,7 @@
   <div class="charts-grid">
     <mat-card class="chart-card">
       <mat-card-header>
-        <mat-card-title>Category Performance</mat-card-title>
+        <mat-card-title i18n="@@analyticsCategoryPerformance">Category Performance</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <div class="category-list">
@@ -119,7 +129,7 @@
 
     <mat-card class="chart-card">
       <mat-card-header>
-        <mat-card-title>Traffic Sources</mat-card-title>
+        <mat-card-title i18n="@@analyticsTrafficSources">Traffic Sources</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <div class="traffic-list">
@@ -127,7 +137,7 @@
             <div class="traffic-indicator" [style.background-color]="source.color"></div>
             <div class="traffic-info">
               <span class="traffic-source">{{ source.source }}</span>
-              <span class="traffic-visitors">{{ source.visitors | number }} visitors</span>
+              <span class="traffic-visitors" i18n="@@analyticsVisitors">{{ source.visitors | number }} visitors</span>
             </div>
             <span class="traffic-percentage">{{ source.percentage }}%</span>
           </div>
